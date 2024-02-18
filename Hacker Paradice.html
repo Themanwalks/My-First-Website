@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Search Bar Example</title>
+    <style>
+        /* Add your CSS styling here */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            text-align: center;
+        }
+
+        header {
+            background-color: #333;
+            color: green;
+            padding: 1em;
+        }
+
+        #search-container {
+            margin: 2em 0;
+        }
+
+        #search-input {
+            padding: 0.5em;
+            font-size: 16px;
+        }
+
+        #search-button {
+            padding: 0.5em 1em;
+            font-size: 16px;
+            cursor: pointer;
+        }
+         main {
+            max-width: 800px;
+            margin: 2em auto;
+            padding: 1em;
+            background-color: white;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        /* Add more styles as needed */
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>Hackerz Store</h1>
+        <p>This Website Was Made By RE3Z</p>
+        <p>This Website Is Promoting Hacks And Hacking Tools Only, There May Be More Yet To Come</p>
+    </header>
+
+    <div id="search-container">
+        <input type="text" id="search-input" placeholder="Search...">
+        <button onclick="performSearch()" id="search-button">Search</button>
+    </div>
+
+    <div id="search-results">
+        <!-- Search results will be displayed here -->
+    </div>
+
+    <script>
+        function performSearch() {
+            // Get the search input value
+            var searchTerm = document.getElementById("search-input").value;
+
+            // Simulate a search (replace this with your actual search logic)
+            var searchResults = [
+                "Result 1: roblox executors",
+                "Result 2: flipper zero firmware",
+                "Result 3: flipper zero badusb",
+                "Result 4: flipper zero sub-gigahrtz"
+            ];
+
+            // Display search results
+            displayResults(searchResults);
+        }
+
+        function displayResults(results) {
+            var resultsContainer = document.getElementById("search-results");
+
+            // Clear previous results
+            resultsContainer.innerHTML = "";
+
+            // Display each result
+            results.forEach(function (result) {
+                var resultItem = document.createElement("p");
+                resultItem.textContent = result;
+                resultsContainer.appendChild(resultItem);
+            });
+        }
+    </script>
+ <main>
+        <h2>Byfron Bypass Executor</h2>
+        <img src="product-image.jpg" alt="Product Image" style="max-width: 100%; height: auto;">
+        <p>Description: This Product Is Coming Soon...</p>
+        <p>Price: Not For Sale Yet</p>
+    </main>
+<main>
+        <h2>Nezur</h2>
+        <img src="Users\HJS\Desktop\Website Shit\download.jpg" alt="Product Image" style="max-width: 100%; height: auto;">
+        <p>Description: AI Aimbot Is The Most Undetected Form Of Cheating As It Does Not Inject Into The Client But Rather Is More Of A Pixel Scanner To Find Any Changes In The Pixel On The Center Of Your Screen. (This Tool Is Free And Open Source) So Get Your Hands Dirty And Roll Up Them Sleves To Rush To Purchase Or Program More Fetures Onto It</p>
+        <p>Price: £000.00</p>
+        <button>Buy Now!</button>
+    </main>
+</body>
+
+</html>
